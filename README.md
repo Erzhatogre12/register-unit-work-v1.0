@@ -1,8 +1,8 @@
-# register-wilayah v1.0
+# register-unit-work v1.0
 
 ## Informasi API
 
-| **Judul** | **register-wilayah v1.0** |
+| **Judul** | **register-unit-work-v1.0** |
 | ----- | --------------------- |
 | Version | v1.0 |
 | URL Sandbox | http://gateway.local.gd:8080/InteroperabilitasSemantikDataRepositoryPemasyarakatan/register-unit-work/1.0 |
@@ -16,7 +16,7 @@ API ini untuk melihat unit rutan yang ada di semua wilayah dan juga jenis pekerj
 
 #### API Statement
 
-##### General Information <br />
+#### General Information <br />
 Endpoint ini digunakan untuk mengakses data yang ada di dalam API register-unit-work
 
 | HTTP Method | Path | Tipe Format |
@@ -35,3 +35,20 @@ Endpoint ini digunakan untuk mengakses data yang ada di dalam API register-unit-
 | Content-Type | application/json |
 | X-RateLimit-Limit |  |
 | Access-Control-Allow-Origin | * |
+
+#### Query Param Structure
+
+**GET** `http://gateway.local.gd:8080/InteroperabilitasSemantikDataRepositoryPemasyarakatan/register-unit-work/1.0`
+
+#### Response Structure
+
+| Field | Data Type	 | Mandatory | Length | Deskripsi | Contoh |
+| --- | --- | --- | --- | ------------ | --- |
+| Jenis WBP | String | M |  | Merupakan penjelasan dari jenis kelamin  |  |
+| Narapidana | integer | M |  | Jumlah Narapidana yang terdapat pada unit tersebut | 20 |
+| Tahanan | integer | M |  | Merupakan jumlah dari tahanan laki-laki | 18 |
+| Column7 | integer | M |  | Merupakan jumlah dari tahanan perempuan | 2 |
+| Column2 | String | M |  | Merupakan Unit kerja dari suatu rutan | A I |
+| Column1 | String | M |  | Merupakan Jenis registrasi dari suatu rutan | Cabang Rutan KPK |
+| Totals | Integer | M |  | Total keseluruhan Tahanan yang berada di dalam unit | 20 |
+
